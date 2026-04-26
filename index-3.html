@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ballinora GAA Junior A Hurling 2026 Podcasts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #1a5c2a;
+      --gold: #c9a84c;
+      --cream: #f5f0e8;
+      --dark: #0f2e17;
+      --mid: #2d7a42;
+    }
+
+    body {
+      background-color: var(--dark);
+      color: var(--cream);
+      font-family: 'Source Sans 3', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 60px;
+      background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(42, 120, 60, 0.25) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 90%, rgba(201, 168, 76, 0.1) 0%, transparent 50%);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 50px;
+      animation: fadeDown 0.8s ease both;
+    }
+
+    .crest {
+      font-size: 3rem;
+      margin-bottom: 12px;
+      filter: drop-shadow(0 0 12px rgba(201,168,76,0.4));
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 900;
+      line-height: 1.2;
+      color: var(--cream);
+      max-width: 640px;
+      letter-spacing: -0.01em;
+    }
+
+    h1 span {
+      color: var(--gold);
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--mid);
+      font-weight: 600;
+    }
+
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), transparent);
+      margin: 20px auto 0;
+      border-radius: 2px;
+    }
+
+    .episodes {
+      width: 100%;
+      max-width: 680px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      animation: fadeUp 0.9s ease 0.2s both;
+    }
+
+    .episode-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.2);
+      border-radius: 12px;
+      padding: 24px 28px;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .episode-card:hover {
+      border-color: rgba(201,168,76,0.5);
+      background: rgba(255,255,255,0.07);
+    }
+
+    .episode-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .ep-badge {
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+    }
+
+    .ep-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--cream);
+      line-height: 1.3;
+    }
+
+    .ep-desc {
+      font-size: 0.85rem;
+      color: rgba(245,240,232,0.55);
+      margin-bottom: 18px;
+      font-weight: 300;
+    }
+
+    audio {
+      width: 100%;
+      height: 44px;
+      border-radius: 8px;
+      accent-color: var(--gold);
+      outline: none;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background: rgba(26, 92, 42, 0.6);
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.78rem;
+      color: rgba(245,240,232,0.3);
+      letter-spacing: 0.08em;
+      text-align: center;
+      animation: fadeUp 1s ease 0.4s both;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="crest">🏑</div>
+    <h1>Ballinora GAA<br><span>Junior A Hurling</span> 2026 Podcasts</h1>
+    <p class="subtitle">Cork County Championship</p>
+    <div class="divider"></div>
+  </header>
+
+  <main class="episodes">
+
+    <div class="episode-card">
+      <div class="episode-meta">
+        <span class="ep-badge">Match 4</span>
+      </div>
+      <div class="ep-title">Div 7 Hurling League — Ballinora v Barryroe</div>
+      <p class="ep-desc">Post-match analysis and reaction from the Division 7 Hurling League fixture.</p>
+      <audio controls preload="none">
+        <source src="https://fisab68.github.io/gaapodcast/Div7HL_M4_Barryroe.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+  </main>
+
+  <footer>Ballinora GAA Club &bull; Cork &bull; 2026</footer>
+
+</body>
+</html>
